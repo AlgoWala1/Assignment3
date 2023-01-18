@@ -12,9 +12,14 @@ if day<=27:
     print("Next date is ",day,"/",month,"/",year)
 ### if the date is 28 of Feb
 elif day == 28 and month == 2:
-    ###And year is a leap year
+    ###And check if year is a leap year
     if year%4==0:
-        print("Next date is 29/02/",year)
+          if leapYear % 100 == 0:
+                if leapYear % 400 == 0:
+                   ###year is a leap year confirmed
+                    print("Next date is 29/02/",year)
+          else:
+              print("Next date is 29/02/",year)
     else:
         print("Next date is 01/03/",year)
 elif day == 30:
