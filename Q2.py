@@ -14,8 +14,8 @@ if day<=27:
 elif day == 28 and month == 2:
     ###And check if year is a leap year
     if year%4==0:
-          if leapYear % 100 == 0:
-                if leapYear % 400 == 0:
+          if year % 100 == 0:
+                if year % 400 == 0:
                    ###year is a leap year confirmed
                     print("Next date is 29/02/",year)
           else:
